@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
 </head>
+
 <body>
     <table border="2" bordercolor="black">
-        <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>City</th>
-        </tr>
-        <tr>
+        <caption>Employee Information</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
             <td>Alice</td>
             <td>30</td>
             <td>New York</td>
         </tr>
+        <tr>
+            <td>Bob</td>
+            <td>25</td>
+            <td>Los Angeles</td>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total employees: 2</td>
+                <td colspan="2">Details</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
+
 </html>
