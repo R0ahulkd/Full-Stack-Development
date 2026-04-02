@@ -9,4 +9,7 @@ switch(fruit){
     case "orange":
         console.log("This is orange");
         break;
+    default :
+        console.log("Invalid Input");
+        break;
 }
