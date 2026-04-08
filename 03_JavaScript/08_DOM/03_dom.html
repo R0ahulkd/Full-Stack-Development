@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">Hey I am rahul kumar</p>
+    <button onclick="changeContent()">Change Content</button>
+    <!-- Internal JavaScript -->
+
+    <script>
+        let para = document.getElementById("para");
+        function changeContent(){
+            para.innerHTML = "<h1>Hey Class</h1>"
+        }
+        console.log(para)
+    </script>
+</body>
+</html>
