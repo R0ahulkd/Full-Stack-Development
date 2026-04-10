@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Guess the Number!</h1>
+        <p>I'm thinking of a number between 1 and 100.</p>
+        <input type="number" id="guessInput" placeholder="Enter your guess" min="1" max="100">
+        <button id="guessButton">Guess</button>
+        <button id="restartButton">Play Again</button>
+        <p id="resultMessage"></p>
+        <p id="attemptsMessage">Attempts: 0</p>
+    </div>
+    <script>
+        let randomNumber = Math.floor(Math.random() * 100) + 1;
+        let attempts = 0;
+
+        const guessButton = document.getElementById('guessButton');
+        const restartButton = document.getElementById('restartButton');
+        const guessInput = document.getElementById('guessInput');
+        const resultMessage = document.getElementById('resultMessage');
+        const attemptsMessage = document.getElementById('attemptsMessage');
+
+        function checkGuess() {
+            const userGuess = parseInt(document.getElementById('guessInput').value);
+            if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
+                resultMessage.textContent = 'Please enter a valid number between 1 and 100.';
+                return;
+            }
+            attempts++;
+
+            resultMessage.classList.remove('correct', 'incorrect');
+
+            if (userGuess === randomNumber) {
+                document.getElementById('resultMessage').textContent = `Congratulations! You've guessed the number ${randomNumber} in ${attempts} attempts!`;
+                resultMessage.classList.add('correct');
+                guessButton.disabled = true;
+                guessInput.disabled = true;
+                restartButton.style.display = 'inline-block';
+            } else if (userGuess < randomNumber) {
+                document.getElementById('resultMessage').textContent = 'Too low! Try again.';
+                resultMessage.classList.add('incorrect');
+            } else {
+                document.getElementById('resultMessage').textContent = 'Too high! Try again.';
+                resultMessage.classList.add('incorrect');
+            }
+
+            document.getElementById('attemptsMessage').textContent = `Attempts: ${attempts}`;
+        }
+
+        guessButton.addEventListener('click', checkGuess);
+
+        guessInput.addEventListener('keyup', function(event) {
+            if (event.key === 'Enter') {
+                checkGuess();
+            }
+        });
+
+        restartButton.addEventListener('click', function() {
+            location.reload();
+        });
+    </script>
+</body>
+</html>
