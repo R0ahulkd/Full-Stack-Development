@@ -1,0 +1,37 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    height: 500px;
+    width: 500px;
+    background: linear-gradient(to top, blue,red);
+    /* transform: translateX(-100px) translateY(100px); */
+    /* transform: translate(-100px,100px); */
+
+    /* border-top: 5px solid red;
+    transition: transform 1s ease; */
+
+    transition: transform 2s ease;
+}
+
+.box:hover {
+    /* transform: rotate(-720deg); */
+    /* transform: rotate(0.5turn); */
+
+    /* transform: scale(3,3); */
+
+    /* transform: skew(0deg,45deg); */
+
+    /* transform: rotateY(45deg); */
+    transform: rotate(180deg);
+    transform-origin: right;
+}

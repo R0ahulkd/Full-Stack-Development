@@ -1,0 +1,45 @@
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    /* animation: rahul 5s ease infinite alternate; */
+    animation: increased_width 2s ease-in-out 1s infinite alternate forwards paused;
+}
+
+/* 1. Animation Name/Keyframe Name */
+/* 2. Animation Duration */
+/* 3. Animation Timing Function */
+/* 4. Animation Delay */
+/* 5. Animation Iteration Count */
+/* 6. Animation Direction */
+/* 7. Animation fill mode */
+/* 8. Animation Playstate */
+
+
+/* Key-Frames */
+@keyframes increased_width {
+    0% {
+        width: 100px;
+    }
+    100% {
+        width: 800px;
+    }
+}
+
+
+@keyframes rahul {
+    0% {
+        border-radius: 10px;
+        background-color: blue;
+    }
+    50% {
+        background-color: green;
+    }
+    80% {
+        background-color: yellow;
+    }
+    100% {
+        border-radius: 50%;
+        background-color: red;
+    }
+}

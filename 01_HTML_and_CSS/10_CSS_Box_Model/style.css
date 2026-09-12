@@ -1,0 +1,19 @@
+#eg-1 {
+    width: 400px;
+    height: 200px;
+    /* absolute (px,cm,mm)
+       relative (%,viewport) */
+    background-color: aqua;
+}
+
+#eg-2 {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
+
+#eg-3 {
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+}

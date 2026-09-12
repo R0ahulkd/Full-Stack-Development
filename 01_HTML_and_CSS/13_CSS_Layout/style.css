@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#eg1 {
+    display: inline; /* i make h1 as inline now it not accept width,height and vertical margins */
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+}
+
+#eg2 {
+    background-color: red;
+}
+
+#eg3 {
+    display: block;
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+    margin: 30px; /* Inline element not accept vertical margin,width and height (only block level element accepts) */
+}
+
+
+
+#eg4 {
+    display: inline-block;
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+}
+
+#eg5 {
+    background-color: red;
+    display: inline-block;
+}
+
+#eg6 {
+    display: block;
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    display: inline-block;
+}
+
+eg7 {
+    display: none; /* It never visible in flow if set as none (not line break no existance) */
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+}

@@ -1,0 +1,21 @@
+#eg1 {
+    width: 400px;
+    height: 300px;
+    background-color: aqua;
+    /* one value 
+    margin: 40px; */
+
+    /* Two Values */
+    /* margin: 20px 30px; 
+    y-axis x-axis */
+
+    /* Three Values
+    margin: 20px 30px 40px;
+    Top left&right Bottom */
+
+    /* Four Values
+    margin: 10px 20px 30px 40px;
+    Top  Right Bottom Left */
+
+    margin-inline: 50px; /* Margin on left and right */
+}

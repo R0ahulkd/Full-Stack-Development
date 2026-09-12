@@ -1,0 +1,51 @@
+#grid-1 {
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(5,100px);
+    grid-template-rows: 100px 100px;
+
+/* 1. Fixed Size
+    grid-template-columns: 100px 100px 100px; */
+
+/* 2. Percentage
+    grid-template-columns: 10% 10% 50%; */
+
+
+    border: 2px solid aqua;
+}
+
+.box {
+    border: 1px solid black;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.red {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.green{
+    grid-row-start: 1;
+    grid-row-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 6;
+}

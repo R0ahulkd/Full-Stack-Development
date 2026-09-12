@@ -1,0 +1,47 @@
+#eg-1 {
+    color: red;
+}
+
+#eg-2 {
+    text-align: left;
+}
+
+#eg-3 {
+    text-align: right;
+}
+
+#eg-4 {
+    text-align: center;
+}
+
+#eg-5 {
+    text-align: justify
+}
+
+#eg-6 {
+    text-decoration: underline;
+    text-transform: lowercase;
+}
+
+#eg-7 {
+    text-decoration: line-through;
+    text-transform: uppercase;
+}
+
+#eg-8 {
+    text-decoration: overline;
+    text-transform: capitalize;
+}
+
+#eg-9 {
+    line-height: 50px;
+}
+
+#eg-10 {
+    text-shadow: 10px 20px 5px red;
+}
+
+#eg-11 {
+    text-shadow: 0px 0px 10px red;
+    color: white;
+}

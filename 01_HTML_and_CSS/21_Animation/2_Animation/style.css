@@ -1,0 +1,16 @@
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    border-radius: 50%;
+    animation: fadein 2s ease infinite alternate;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
