@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Signup Form</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Signup</h1>
-</body>
+
+    <meta
+      name="description"
+      content="A simple signup form created using HTML and CSS."
+    />
+
+    <link rel="icon" href="./favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <header></header>
+
+    <main>
+      <section class="signup-container">
+
+        <h1>Signup</h1>
+
+        <form action="#" method="post">
+
+          <input
+            type="text"
+            id="full_name"
+            name="full_name"
+            placeholder="Full Name"
+            autocomplete="name"
+            required
+          />
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            autocomplete="email"
+            required
+          />
+
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            autocomplete="new-password"
+            minlength="8"
+            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}"
+            title="Password must contain at least 8 characters, one uppercase letter, one lowercase letter, and one number."
+            required
+          />
+
+          <input
+            type="password"
+            id="confirm_password"
+            name="confirm_password"
+            placeholder="Confirm Password"
+            autocomplete="new-password"
+            required
+          />
+
+          <input
+            type="date"
+            id="date"
+            name="date"
+            required
+          />
+
+          <div class="role-group">
+
+            <label>
+              <input
+                type="radio"
+                name="role"
+                value="student"
+                required
+              />
+              Student
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="role"
+                value="employee"
+              />
+              Employee
+            </label>
+
+          </div>
+
+          <div class="terms-group">
+
+            <input
+              type="checkbox"
+              id="agree_terms"
+              name="agree_terms"
+              required
+            />
+
+            <label for="agree_terms">
+              I agree to all the Terms and conditions
+            </label>
+
+          </div>
+
+          <button type="submit">Signup</button>
+
+        </form>
+
+      </section>
+    </main>
+
+    <footer></footer>
+
+  </body>
 </html>
