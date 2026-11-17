@@ -7,6 +7,6 @@ let user = {
     profile : "Profile1",
 };
 
-console.log("EMail of the user is : " + user.email);
+console.log("Email of the user is : " + user.email);
 user.email = "rahul2@gmail.com";
-console.log("EMail of the user is : " + user.email);
+console.log("Email of the user is : " + user.email);
